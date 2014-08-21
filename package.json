@@ -1,0 +1,30 @@
+{
+  "name": "dhrome",
+  "title": "Dhrome",
+  "description": "A web browser extension for Drupal.org related actions for Drupal geeks.",
+  "version": "0.1.1",
+  "homepage": "https://dhrome.github.com/dhrome",
+  "author": {
+    "name": "Renato Vasconcellos",
+    "url": "https://drupal.org/u/revagomes"
+  },
+  "icon": "icon.png",
+  "maintainers": [
+    {
+      "name": "Renato Vasconcellos",
+      "url": "https://drupal.org/u/revagomes"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dhrome/dhrome.git"
+  },
+  "bugs": "https://github.com/dhrome/dhrome/issues",
+  "licenses": [
+    {
+      "type": "GPL-2.0",
+      "url": "https://github.com/dhrome/dhrome/blob/1.x/LICENSE-GPL-2.0"
+    }
+  ],
+  "keywords": []
+}
