@@ -1,6 +1,6 @@
 # Dhrome [![GitHub version](https://badge.fury.io/gh/dhrome%2Fdhrome.svg)](http://badge.fury.io/gh/dhrome%2Fdhrome) [![Show some love](http://img.shields.io/gittip/revagomes.svg)](https://www.gittip.com/revagomes)
 
-A web browser extension for Drupal.org related actions that enhances user experience.
+A web browser extension for Drupal.org related actions.
 
 ## Installation
 
@@ -25,23 +25,27 @@ Comming soon.
 ## Dhrome commands
 
 **prj**
+
 Go to the project home page.
 ```
 prj:views
 ```
 **usg**
+
 Go to the project usage statistics page.
 ```
 usg:drupal
 ```
 
 **iss**
+
 Go to the project issues page.
 ```
 iss:drupal
 ```
 
 **api**
+
 Performs a function search  on api.drupal.org (Drupal 6 and 7).
 If the api version is not passed the version 7 is used.
 ```
@@ -49,47 +53,54 @@ api:7:hook_menu
 ```
 
 **fapi**
+
 Performs a search on Drupal Form API page.
 ```
 fapi:submit
 ```
 
 **usr**
+
 Performs a user search on drupal.org.
 ```
 usr:revagomes
 ```
 
 **irc**
+
 Performs a user search by his/her IRC nick.
 ```
 irc:revagomes
 ```
 
 **do**
+
 Permforms a search only on drupal.org site.
 ```
 do:About
 ```
 
 **doc**
+
 Permforms a search filtered by Documentation pages.
 ```
 doc:Developer Guide
 ```
 
 **mod**
+
 Permforms a search filtered by modules.
 ```
 mod:page title
 ```
 
 **thm**
+
 Permforms a search filtered by themes.
 ```
 thm:Zen
 ```
 
-### Maintainers
+### Author
 
-* [Renato Vasconcellos](https://drupal.org/u/revagomes)
+[Renato Vasconcellos](https://drupal.org/u/revagomes)
