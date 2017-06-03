@@ -1,6 +1,6 @@
 {
-  "name": "Drupal Project Lookup",
-  "description": "Adds support to the omnibox to quick lookup Drupal projects.",
+  "name": "Dhrome",
+  "description": "Adds support to the omnibox to quick inteact with Drupal.org.",
   "version": "1.0",
   "manifest_version" : 2,
   "background": {
