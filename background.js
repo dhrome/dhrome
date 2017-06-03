@@ -13,10 +13,10 @@
     // api command
     if (query.search(/^api:/) == 0) {
     //check if api version is specified
-      if((query.charAt(4) == '6' || query.charAt(4) == '7') && query.charAt(5) == ':'){
-          version = query.charAt(4);
+      if((query.charAt(4) == '6' || query.charAt(4) == '7'|| query.charAt(4) == '8') && query.charAt(5) == ':'){
+          version = (query.charAt(4) == '8' ) ? '8.3.x' : query.charAt(4) ;
           query = query.substr(6,query.length);
-          url = 'http://api.drupal.org/api/search/' + version + '/' +query;
+          url = 'https://api.drupal.org/api/drupal/' + version + '.x/search/' + query;
       }
     }
     // usr commnad
