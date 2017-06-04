@@ -1,8 +1,8 @@
 (function(){
   function go(a){
-  	chrome.tabs.getSelected(null,function(l){
-  		chrome.tabs.update(l.id,{url:a})
-  	})
+    chrome.tabs.getSelected(null,function(l){
+      chrome.tabs.update(l.id,{url:a})
+    })
   }
 
   chrome.omnibox.onInputEntered.addListener(function(query){
@@ -70,6 +70,6 @@
       url = 'http://drupal.org/search/drupalorg/' + query;
     }
 
-  	go(url);
+    go(url);
   });
 })();
