@@ -53,9 +53,9 @@
     }
     // Form API (fapi) command
     if (query.search(/^fapi:/) == 0) {
-      version = query.substr(5,query.length);
       query = query.substr(7,query.length);
-      versionMap = {
+      let version = query.substr(5,query.length);
+      let versionMap = {
         '7': 'http://api.drupal.org/api/drupal/developer!topics!forms_api_reference.html/7#',
         '8': 'https://api.drupal.org/api/drupal/elements/8.2.x'
       };
