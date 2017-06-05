@@ -41,10 +41,16 @@
       query = query.substr(4,query.length);
       url = 'http://drupal.org/project/usage/' + query;
     }
-    // fapi command
+    // Form API (fapi) command
     if (query.search(/^fapi:/) == 0) {
-      query = query.substr(5,query.length);
-      url = 'http://api.drupal.org/api/drupal/developer!topics!forms_api_reference.html/7#' + query;
+      version = query.substr(5,query.length);
+      query = query.substr(7,query.length);
+      versionMap = {
+        '7': 'http://api.drupal.org/api/drupal/developer!topics!forms_api_reference.html/7#',
+        '8': 'https://api.drupal.org/api/drupal/elements/8.2.x'
+      };
+
+      url = versionMap[version]  + query;
     }
     // iss command
     if (query.search(/^iss:/) == 0) {
