@@ -51,10 +51,10 @@
       query = query.substr(4,query.length);
       url = 'http://drupal.org/project/issues/' + query + '?status=All' ;
     }
-    // do command
+    // Global Search (do) command
     if (query.search(/^do:/) == 0) {
       query = query.substr(3,query.length);
-      url = 'http://drupal.org/search/apachesolr_search/' + query;
+      url = 'https://www.drupal.org/search/site/' + query;
     }
     // doc command
     if (query.search(/^doc:/) == 0) {
