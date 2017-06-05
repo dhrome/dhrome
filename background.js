@@ -17,7 +17,7 @@
     var url = 'https://www.drupal.org/search/site/';
     url += query;
 
-    // api command
+    // API (api) command
     if (query.search(/^api:/) == 0) {
     //check if api version is specified
       if((query.charAt(4) == '6' || query.charAt(4) == '7'|| query.charAt(4) == '8') && query.charAt(5) == ':'){
@@ -31,12 +31,12 @@
       query = query.substr(4,query.length);
       url = 'http://drupal.org/search/user/' + query;
     }
-    // prj commnad
+    // PROJECT (prj) commnad
     if (query.search(/^prj:/) == 0) {
       query = query.substr(4,query.length);
       url = 'http://drupal.org/project/' + query;
     }
-    // usg command
+    // USAGE (usg) command
     if (query.search(/^usg:/) == 0) {
       query = query.substr(4,query.length);
       url = 'http://drupal.org/project/usage/' + query;
@@ -52,7 +52,7 @@
 
       url = versionMap[version]  + query;
     }
-    // iss command
+    // ISSUES (iss) command
     if (query.search(/^iss:/) == 0) {
       query = query.substr(4,query.length);
       url = 'http://drupal.org/project/issues/' + query + '?status=All' ;
@@ -62,22 +62,22 @@
       query = query.substr(3,query.length);
       url = 'https://www.drupal.org/search/site/' + query;
     }
-    // doc command
+    // DOCUMENTATION (doc) command
     if (query.search(/^doc:/) == 0) {
       query = query.substr(4,query.length);
       url = 'http://drupal.org/search/apachesolr_multisitesearch/' + query + '?filters=ss_meta_type%3Adocumentation';
     }
-    // mod command
+    // MODULE (mod) command
     if (query.search(/^mod:/) == 0) {
       query = query.substr(4,query.length);
       url = 'http://drupal.org/project/modules?text=' + query;
     }
-    // thm command
+    // THEME (thm) command
     if (query.search(/^thm:/) == 0) {
       query = query.substr(4,query.length);
       url = 'http://drupal.org/project/themes?text=' + query;
     }
-    // irc command
+    // IRC user (irc) command
     if (query.search(/^irc:/) == 0) {
       query = query.substr(4,query.length);
       url = 'http://drupal.org/search/drupalorg/' + query;
