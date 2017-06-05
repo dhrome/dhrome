@@ -1,20 +1,27 @@
 (function(){
+  chrome.omnibox.onInputEntered.addListener(function(query) {
+    go(prepareUrl(query));
+  });
+
+  // Redirects the user to the selected Drupal.org related URL.
   function go(a){
-    chrome.tabs.getSelected(null,function(l){
+    chrome.tabs.getSelected(null,function(l) {
       chrome.tabs.update(l.id,{url:a})
     })
   }
 
-  chrome.omnibox.onInputEntered.addListener(function(query){
-    var url = 'http://drupal.org/search/apachesolr_multisitesearch/';
+  // Prepare URL based on query params.
+  // @return Drupal.org related URL.
+  function prepareUrl(query) {
 
+    var url = 'https://www.drupal.org/search/site/';
     url += query;
 
     // api command
     if (query.search(/^api:/) == 0) {
     //check if api version is specified
       if((query.charAt(4) == '6' || query.charAt(4) == '7'|| query.charAt(4) == '8') && query.charAt(5) == ':'){
-          version = (query.charAt(4) == '8' ) ? '8.3.x' : query.charAt(4) ;
+          version = (query.charAt(4) == '8' ) ? '8.3' : query.charAt(4) ;
           query = query.substr(6,query.length);
           url = 'https://api.drupal.org/api/drupal/' + version + '.x/search/' + query;
       }
@@ -69,7 +76,6 @@
       query = query.substr(4,query.length);
       url = 'http://drupal.org/search/drupalorg/' + query;
     }
-
-    go(url);
-  });
+    return url;
+  }
 })();
