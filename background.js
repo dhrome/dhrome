@@ -26,10 +26,10 @@
           url = 'https://api.drupal.org/api/drupal/' + version + '.x/search/' + query;
       }
     }
-    // usr commnad
+    // USER (urs) commnad
     if (query.search(/^usr:/) == 0) {
       query = query.substr(4,query.length);
-      url = 'http://drupal.org/search/user_search/' + query;
+      url = 'http://drupal.org/search/user/' + query;
     }
     // prj commnad
     if (query.search(/^prj:/) == 0) {
