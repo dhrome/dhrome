@@ -17,6 +17,12 @@
     var url = 'https://www.drupal.org/search/site/';
     url += query;
 
+    // LOG IN (login) commnad
+    if (query.search(/^login$/) == 0) {
+      query = query.substr(4,query.length);
+      url = 'http://drupal.org/user/login';
+    }
+
     // API (api) command
     if (query.search(/^api:/) == 0) {
     //check if api version is specified
