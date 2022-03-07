@@ -103,4 +103,6 @@ thm:Zen
 
 ### Author
 
-[Renato Vasconcellos](https://drupal.org/u/revagomes)
+[![Reva Gomes](https://github.com/revagomes.png?size=100)](https://github.com/revagomes) |
+--- |
+[Reva Gomes](https://drupal.org/u/revagomes) |
