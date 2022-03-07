@@ -1,4 +1,4 @@
-# Dhrome [![GitHub version](https://badge.fury.io/gh/dhrome%2Fdhrome.svg)](http://badge.fury.io/gh/dhrome%2Fdhrome) [![Show some love](http://img.shields.io/gittip/revagomes.svg)](https://www.gittip.com/revagomes)
+# Dhrome [![GitHub version](https://badge.fury.io/gh/dhrome%2Fdhrome.svg)](http://badge.fury.io/gh/dhrome%2Fdhrome) [![Show some love](https://img.shields.io/badge/Liked%20it%3F-Show%20some%20love-red)](https://www.gittip.com/revagomes)
 
 A web browser extension for Drupal.org related actions.
 
